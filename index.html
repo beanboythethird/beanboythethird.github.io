@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mostly Cap Stable</title>
+    <link rel="icon" href="mostlycapstable.ico" type="image/x-icon"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #1c1c1c;*/
+            background-color: #292929;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            max-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-left: 25px;
+            padding-right: 25px;
+            background-color: #1a1a1a;
+            border-radius: 5px;
+            flex-direction: row;
+            margin-top: 2vh;
+        }
+
+        .container img {
+            display: flex;
+            align-self: center;
+            padding-left: 5%;
+        }
+
+        h1 {
+            color: #ffc500;
+        }
+
+        p {
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .corporation-text {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #1a1a1a;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .footer-button {
+            background-color: #ffc500;
+            color: #1c1c1c;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-right: 1vw;
+        }
+
+        .contact-info {
+            margin-left: 2vw;
+            color: #ffc500;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 70vw;
+            position: relative;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .text {
+            margin-top: 2vh;
+            color: #f2f2f2;
+            font-size: 20px;
+            text-align: center;
+            display: flex;
+            max-width: 50vw;
+        }
+
+        .mySlides img {
+             height: 40vh
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        /*.dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }*/
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main_text">
+            <h1>Welcome to Mostly Cap Stable</h1>
+            <p class="corporation-text">
+                Located in the deep bowels of the Imperium, Mostly Cap Stable aims to leave a mark in the fabric of New Eden.
+                MCAP is a corporation that focuses mainly on PvP. While aiming to provide the tools for our members to be independent in terms of industry and ISK generation, we value teamwork above all.
+            </p>
+        </div>
+        <img src="mostlycapstable.png" alt="Mostly Cap Stable Logo" width="117" height="116">
+    </div>
+
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="pvp.jpg">
+            <div class="text">Flying with us will give you access to a constant flow of PvP content, from solo, small gang, and up until the big battles with hundreds or thousands of players.</div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="industry.jpg">
+            <div class="text">Corporation blueprints paired with the unrivaled industrial infrastructure of the Imperium will allow you to delve deep into Industry, manufacturing your own modules and ships.</div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="market.png">
+            <div class="text">If you prefer using the market to find your gear, 1DQ Keepstar is immediately after Amarr in terms of item availability.</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+
+    <!-- <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="pvp.jpg" alt="Image 1">
+                <p>Flying with us will give you access to a constant flow of PvP content, from solo, small gang, and up until the big battles with hundreds or thousands of players.</p>
+            </div>
+            <div class="slide">
+                <img src="industry.jpg" alt="Image 2">
+                <p>Corporation blueprints paired with the unrivaled industrial infrastructure of the Imperium will allow you to delve deep into Industry, manufacturing your own modules and ships.</p>
+            </div>
+            <div class="slide">
+                <img src="market.png" alt="Image 3">
+                <p>If you prefer using the market to find your gear, 1DQ Keepstar is immediately after Amarr in terms of item availability.</p>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="footer">
+        <div class="contact-info">Contact: <strong>Nullum Inanis</strong> in game</div>
+        <a class="footer-button" href="https://seat.mostlycapstable.com/">Seat</a>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex-1].style.display = "block";
+        } 
+    </script>
+</body>
+</html>
